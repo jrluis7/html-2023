@@ -1,0 +1,65 @@
+/* 
+    Maquetación clásica
+        FLOAT
+
+*/
+
+/* TODOS los elementos html */
+*{
+    /* Modificar el ancho / alto de las cajas --> aplica desde el borde hacia dentro  */
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: grey;
+    padding: 20px;
+}
+#curriculum{
+    background-color: white;
+    width: 800px;
+    height: 1000px;
+    /* Centrar un elemento display block (caja). Cuando hay margin */
+    margin: 0 auto;
+}
+#column{
+    width: 33.33%;
+    height: 100%;
+    background-color: #444;
+    float: left;
+    color: white;
+    padding: 45px;
+    text-align: center;
+}
+/* Selector descendiente (cualquier hijo) */
+#column img{
+    width: 75%;
+    border-radius: 50%;
+}
+#column h2{
+    text-align: left;
+}
+#column p{
+    text-align: left;
+    color: #b5b5b5;
+    font-size: 14px;
+}
+
+#content{
+    width: 66.66%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    padding: 60px 20px;
+}
+
+.section{
+    border-bottom: 2px solid grey;
+    overflow: hidden;
+}
+.section h1{
+    color: #444444;
+}
+.section .col-50{
+    width: 50%;
+    float:left;
+}

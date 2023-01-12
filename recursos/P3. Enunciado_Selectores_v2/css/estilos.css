@@ -1,0 +1,143 @@
+/* Todos los elementos de la pagina */
+* {
+  box-sizing: border-box;
+}
+
+/* Elemento Body */
+body {
+  background-color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Todos los enlaces la pagina */
+ {
+  font-weight: bold;
+  color: #f44336;
+  text-decoration: none;
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+
+/* Todos los h1 de la pagina */
+ {
+  color: white;
+}
+
+/* Todos los h1 y todos los h2 */
+ {
+  text-align: center;
+}
+
+/* Elemento de id restaurante */
+ {
+  padding: 20px;
+  perspective: 1000px;
+}
+
+/* Elementos de clase mesa */
+ {
+  background-color: rgb(107, 47, 3);
+  width: 400px;
+  min-height: 150px;
+  margin: 10px auto;
+  padding: 20px;
+  overflow: hidden;
+  transform: rotateX(15deg);
+}
+
+/* Elementos de clase mesa que además tenga el identificador larga*/
+ {
+  width: 100%;
+}
+
+/* Cualquier clase vaso que esté en la clase mesa */
+ {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #d5d5d5;
+  border-radius: 50%;
+  background-color: rgb(32, 182, 228);
+  box-shadow: 3px 4px 5px black;
+  float: left;
+}
+
+/* Elementos de clase mantel que sean hijos directos de la clase mesa */
+ {
+  overflow: hidden;
+  background-color: cadetblue;
+}
+
+/* Cualquier clase plato que esté en la clase mesa */
+ {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+  position: relative;
+  border-bottom: solid 5px #ddd;
+}
+
+/* Un plato de clase especial que esté en algún lugar de una clase mesa */
+ {
+  background-color: rgb(202, 176, 69);
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  border-bottom: solid 5px #cbbb7b;
+}
+
+/* Los elementos de la clase mesa y los elementos de la clase plato */
+ {
+  box-shadow: 1px 2px 3px black;
+}
+
+/* Sólo los span que sean hijos directos de la clase plato  */
+ {
+  width: 17px;
+  border-radius: 14px;
+  height: 44px;
+  background: #126a12;
+  display: inline-block;
+}
+
+/* Los span hijos directos de un div que sea hijo directo de un elemento de clase plato */
+ {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+/* Solo los párrafos contenidos en id restaurante */
+ {
+  color: #c2c2c2;
+  text-shadow: 1px 2px 3px black;
+}
+
+/* Solo el h2 que venga a continuación de un h1 (hermanos) */
+ {
+  background-color: #535353;
+  width: 50%;
+  margin: 0 auto;
+}
+/* Las etiquetas divs con clase plato que vayan precedidos directamente de un plato de clase especial */
+ {
+  border: 7px solid #4656ae;
+}
+
+/* Los divs con clase vaso que vayan precedidos en algún momento de un plato de clase especial */
+ {
+  background-color: #98091c;
+}
+
+/* Los elementos de clase plato contenidos en la mesa #mediana que sean hijos pares */
+ {
+  background-color: #b03030;
+  border-color: #af5d5d;
+}

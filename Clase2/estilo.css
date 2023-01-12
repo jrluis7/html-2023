@@ -1,0 +1,41 @@
+/* 
+
+--- Selectores ---
+    Etiqueta 
+    Clase
+    Identificador
+*/
+
+/* Cualquier etiqueta HTML */
+h1 {
+  color: red;
+  font-size: 20px;
+}
+
+#primero {
+  padding: 10px;
+  background-color: rgb(238, 144, 194);
+}
+
+.hijo {
+  padding: 15px;
+  margin: 20px;
+}
+
+/* 
+    Alarma mental: Necesito controlar su tamaño, porque si no se va a mostrar todo lo grande que es
+
+*/
+.w50 {
+  width: 50%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.columna {
+  margin-top: 10px;
+  background-color: lightcoral;
+  width: 50%;
+}

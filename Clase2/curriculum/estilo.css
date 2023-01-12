@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 
+    FLOAT: NO RECOMENDADO
+
+    Sólo lo vamos a ver para conocerlo las primeras semanas
+
+*/
+
+#sobreMi {
+  padding: 30px;
+  background-color: #595959;
+  color: white;
+  width: 30%;
+  float: left;
+}
+
+.miniYoda {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#experiencia {
+  width: 70%;
+  float: left;
+  padding: 30px;
+}
+
+.floatW50 {
+  float: left;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.destacado {
+  color: purple;
+}

@@ -1,0 +1,30 @@
+/*  Selector  */
+div {
+  color: red;
+}
+/* 
+    Esto es un comentario en CSS
+*/
+img {
+  width: 100px;
+}
+/* 
+    Seleccionar una clase -> .nombreClase
+*/
+
+.principal {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.resaltado {
+  color: darkblue;
+  background-color: lightcoral;
+  padding: 20px;
+  width: 50%;
+  height: 80px;
+}
+
+#elementoSecundario {
+  color: purple;
+}

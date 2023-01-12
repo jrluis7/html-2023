@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 400px;
+}
+
+/* 
+    selector{
+
+        Reglas de estilo
+
+    }
+
+*/
+
+h1 {
+  text-align: center;
+}
+span {
+  background-color: lightgreen;
+}
+
+.destacado {
+  color: red;
+}
+
+#grid-principal {
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: 10px;
+
+  /* Padre de elementos FLOAT */
+  overflow: hidden;
+}
+
+.columna {
+  width: 33.33%;
+  background-color: darkblue;
+  color: white;
+  height: 100px;
+  /* NO RECOMENDADO */
+  float: left;
+}
+
+#noticia {
+  background-color: pink;
+}
+
+/* Todos los <p> dentro de #noticia */
+/* #noticia p { */
+/* SOLO los párrafos HIJO DIRECTO de #noticia  */
+#noticia > p {
+  color: darkblue;
+}
+
+.final-noticia {
+  background-color: lightblue;
+}
+
+.btn {
+  background-color: #333333;
+  color: white;
+  border-width: 0px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* 
+    Hover-> Pasar el ratón por encima
+*/
+.btn:hover {
+  /* background-color: lightgray; */
+  filter: brightness(150%);
+}
+
+/* Una etiquetsa <button> que además tenga la clase .success */
+button.success {
+  background-color: lightgreen;
+}
+
+button.info {
+  background-color: lightskyblue;
+}
+
+button.btn.danger {
+  background-color: tomato;
+}
+
+div.info {
+}

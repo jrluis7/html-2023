@@ -1,0 +1,74 @@
+/* 
+    Repaso
+        - Crear HTML y CSS
+        - Atributos HTML: Identificadores y Clases
+        - Estructura Padres > Hijos ->>> Estructura DOM
+        - Elemento de bloque (Div, h1, p... ) / En línea (Span, a...)
+        - Reglas básicas
+        - Float ( NO RECOMENDADO )
+    
+    Selectores
+        - Etiqueta
+        - Clase
+        - Identificador
+        - Selector descendente  <<
+        - Fuentes
+
+
+    PRÁCTICA
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+#primerDiv {
+  background-color: lightblue;
+  height: 200px;
+  padding: 10px;
+  width: 20%;
+}
+
+#segundoDiv {
+  background-color: coral;
+  padding: 10px;
+  width: 50%;
+}
+
+#primerSpan {
+  background-color: lightgreen;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  /* Comportamiento Extraño! */
+}
+
+#segundoSpan {
+  background-color: beige;
+}
+
+#primerParrafo {
+  background-color: lightpink;
+}
+
+#segundoParrafo {
+  background-color: lightskyblue;
+  padding: 7px;
+}
+
+.fila {
+  background-color: pink;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.columna {
+  border: 1px solid black;
+  height: 100px;
+  width: 33.33%;
+  float: left;
+}

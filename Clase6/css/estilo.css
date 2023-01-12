@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 5000px;
+  font-size: 18px;
+}
+
+nav a {
+  background-color: #959595;
+  width: 100px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.noticia p:nth-child(2n) {
+  color: blue;
+  font-weight: 800;
+}
+.noticia p:nth-child(2n + 1) {
+  color: purple;
+  font-style: oblique;
+}
+
+.contenedor-imagen img {
+  width: 300px;
+}
+
+#contenedor-background {
+  height: 300px;
+  background-image: url("../img/way-g2e5f19ab8_1920.jpg");
+}
+
+.big {
+  color: green;
+  font-size: 30px;
+}
+
+/* 
+
+EM -> Tamaño proporcional realtivo a lo que tocaría ser. 2em -> El doble de lo que sería 
+*/
+.size-relativa {
+  font-size: 1.5em;
+}
+
+/* 
+  REM -> Relativo al tamño "por defecto" del documento
+*/
+.size-rem {
+  color: red;
+  font-size: 2rem;
+}
+
+.material-symbols-outlined.red {
+  color: red;
+  font-size: 4rem;
+}
+
+.column {
+  height: 200px;
+  width: 50%;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: coral;
+}
+
+.other-column {
+  height: 200px;
+  background-color: lightgreen;
+  width: calc(100% - 100px);
+  min-width: 100px;
+}
+
+#cabecera-principal {
+  background-color: pink;
+  /* Viewport height -> 50% del tamaño del navegador */
+  height: 100vh;
+}
+
+.uno {
+  height: 300px;
+  background-color: coral;
+}
+
+.dentro-uno {
+  height: 100px;
+  width: 100px;
+  background-color: lightgreen;
+  float: left;
+}

@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*  Font - Family: Aplica herencia -> Sus hijos si no le dicen lo contrario adquieren esta regla   */
+  font-family: sans-serif;
+
+  min-height: 2000px;
+}
+
+/* Selector SUMA */
+h1,
+h2,
+h3 {
+  color: darkblue;
+}
+
+#fila-cuadrados {
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: 10px;
+
+  /* Truco para cuando tengo hijos FLOAT */
+  overflow: hidden;
+}
+
+.cuadrado {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  margin: 20px;
+  /* NO RECOMENDADO */
+  float: left;
+}
+
+.cuadrado.rojo {
+  background-color: tomato;
+}
+
+/* 
+ PSEUDO CLASE  Hover -> Modifica el comportamiento
+*/
+.rojo:hover {
+  background-color: rgb(82, 0, 0);
+}
+
+#fila-aside {
+  background-color: lightpink;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Selector hijo */
+
+#fila-aside .contenido {
+  width: 80%;
+  height: 200px;
+  background-color: lightsteelblue;
+  float: left;
+}
+
+/* Selector HIJO -> SOLO los aside que sean hijos DIRECTOS de #fila-aside */
+#fila-aside > aside {
+}
+/* Selector HIJO -> cualquier aside DENTRO de #fila-aside */
+#fila-aside aside {
+  width: 20%;
+  height: 200px;
+  background-color: lightseagreen;
+  float: left;
+}
+
+.contenido {
+  border: 2px solid red;
+}
+
+/* Tanto los elementos con clase .error como los elementos con clase .validate */
+.error,
+.validate {
+}
+
+/* Selector hermano que está al lado */
+h3 + p {
+  color: blue;
+}
+
+/* Todos los hermanos */
+h3 ~ p {
+  background-color: lightgray;
+}
+
+/* Los span que están dentro de un <p> que hermano directo de <h3> */
+h3 + p span {
+  font-size: 30px;
+  color: purple;
+}
+
+#tablero {
+  border: 1px solid black;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.casilla {
+  height: 100px;
+  width: 100px;
+  background-color: bisque;
+  float: left;
+}
+
+.casilla:first-child,
+.casilla:last-child {
+  background-color: brown;
+}
+
+/* .casilla:last-child {
+  background-color: brown;
+} */
+
+/* El séptimo elemento */
+.casilla:nth-child(7) {
+  background-color: turquoise;
+}
+
+/* Todos los hijos PARES */
+.casilla:nth-child(2n):hover {
+  background-color: black;
+}
+
+/* Todos los hijos IMPARES */
+.casilla:nth-child(2n + 1):hover {
+  background-color: rgb(255, 195, 67);
+}
+
+#destacado {
+  background-color: lightgreen;
+  width: 200px;
+  display: inline-block;
+}

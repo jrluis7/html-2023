@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 300vh;
+}
+
+h3 {
+  text-shadow: 10px 5px 2px red;
+}
+
+#padre {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.contenedor-pequeno {
+  background-color: lightblue;
+  width: 200px;
+  height: 300px;
+  /* word-wrap: break-word; */
+  word-break: keep-all;
+  hyphens: auto;
+
+  /* Primera forma de centrar elementos */
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.enlinea {
+  width: 100px;
+  background-color: lightpink;
+  white-space: nowrap;
+  display: inline-block;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid black;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+}

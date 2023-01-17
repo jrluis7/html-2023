@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#uno {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+#dos {
+  background-color: lightgreen;
+  padding: 20px;
+  /* overflow: hidden; */
+}
+
+.column-50 {
+  width: 50%;
+  aspect-ratio: 2/1;
+  background-color: pink;
+  float: left;
+}
+.column-50:first-child {
+  background-color: lightsalmon;
+}
+
+h2 {
+  background-color: purple;
+  text-decoration: overline;
+  color: white;
+  text-transform: uppercase;
+}
+
+.clear-float {
+  /* EL elemento no puede tener FLOAT 
+        - left
+        - right
+        - both
+    */
+  clear: both;
+}
+
+div {
+  letter-spacing: 2px;
+}
+
+.columnas {
+  column-count: 4;
+  column-gap: 10px;
+  column-rule-width: 2px;
+  column-rule-color: black;
+}

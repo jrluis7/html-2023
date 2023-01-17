@@ -1,0 +1,177 @@
+/* 
+Repaso Fuentes
+    - Cargar una fuente con font-face
+    
+
+Repaso Float -> Corrección 
+
+
+Herencia
+Prioridad de estilos
+Colores / Enlaces / Anclas
+
+
+
+
+
+*/
+/* Configurar la fuente */
+@font-face {
+  /* El nombre de la fuente PERSONALIZADO */
+  /* font-family: "Raleway"; */
+  font-family: "Raleway";
+  src: url("fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway/static/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Font family aplica herencia a sus hijos */
+body {
+  margin: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#miIdentificador {
+  font-family: "Raleway";
+}
+
+#fila1 {
+  overflow: hidden;
+}
+
+.w50 {
+  width: 50%;
+  /* height: 300px; */
+  /* border: 1px solid black; */
+  float: left;
+}
+
+#rojo {
+  background-color: red;
+  height: 300px;
+}
+
+#subfila_1,
+#subfila_2 {
+  overflow: hidden;
+}
+
+.cuadrado {
+  width: 33.33%;
+  float: left;
+  aspect-ratio: 1/1;
+}
+#azul {
+  background-color: blue;
+}
+
+#verde {
+  background-color: green;
+}
+
+#amarillo {
+  background-color: yellow;
+}
+
+#morado {
+  height: 200px;
+  width: 33.33%;
+  float: right;
+  background-color: purple;
+}
+
+#rosa {
+  height: 50px;
+  width: 33.33%;
+  float: right;
+  background-color: pink;
+}
+
+#naranja {
+  background-color: orange;
+  height: 100px;
+  width: 60%;
+}
+
+#primero {
+  color: green;
+}
+
+#nieto {
+  color: red;
+}
+
+.fuente-purple {
+  /* Se pone el primero en importancia */
+  /* NO RECOMENDADO */
+  color: purple !important;
+}
+
+.fuente-azul {
+  color: blue;
+}
+
+.btn {
+  background-color: grey;
+}
+
+.btn.success {
+  background-color: lightgreen;
+}
+/* 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+..
+20
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+A
+b
+c
+d
+e
+f
+
+00 -> 0
+
+FF -> 255 */
+
+p#nieto {
+  background-color: rgb(255, 255, 0);
+  background-color: #ffff00;
+}

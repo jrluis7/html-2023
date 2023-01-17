@@ -5,11 +5,13 @@
   --main-color: #ff385c;
   --main-grey-light: #e5e5e5;
   --padding-normal: 10px;
+  --height-nav: 80px;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
+  min-height: 200vh;
 }
 
 /* COMUN */
@@ -17,6 +19,7 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+  height: 100%;
 }
 
 .row {
@@ -44,7 +47,11 @@ body {
 
 /* MENU MAIN */
 #menu_main {
-  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--height-nav);
   border-bottom: 1px solid var(--main-grey-light);
 }
 #menu_main .container {
@@ -78,4 +85,66 @@ body {
 #contact_menu .contact {
   width: 70px;
   height: 90%;
+}
+
+#submenu {
+  position: fixed;
+  top: var(--height-nav);
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-bottom: 1px solid var(--main-grey-light);
+}
+
+#submenu nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container_items {
+  display: flex;
+  gap: 20px;
+}
+
+.item_filter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.6;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding: 4px;
+}
+
+.item_filter:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+
+  opacity: 1;
+}
+
+.item_filter .texto {
+  font-size: 0.9rem;
+}
+.item_filter img {
+  width: 24px;
+}
+
+main {
+  margin-top: 150px;
+}
+
+#grid_houses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid_houses .item {
+  min-width: 200px;
+  height: 200px;
+  border: 1px so;
 }

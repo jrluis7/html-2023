@@ -1,0 +1,77 @@
+/* 
+    - Repaso Backgrounds
+    - Múltiples backgrounds
+    - Margin, Border, Padding, Content -> Box Sizing
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 500vh;
+}
+
+header {
+  /* border: 1px solid red; */
+  padding: 20px;
+  padding-top: 20px;
+  background-image: url("../img/hiking-g30a8fa5bc_1280.jpg");
+  height: 50vh;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header h1 {
+  margin: 0;
+}
+
+#uno {
+  background-color: coral;
+  height: 500px;
+  /* Configuro Padding en los 4 lados */
+  padding: 20px;
+
+  /* Configuro Verticalmente 100px y Horizontalmente 50px */
+  padding: 100px 50px;
+
+  /* padding-left: 30px; */
+
+  /* background: lightblue url("../img/estrella-mario-bros-png.png") center/100px
+    no-repeat; */
+
+  background-image: url("../img/estrella-mario-bros-png.png"),
+    url("../img/mountains-g93136b3ca_1280.jpg");
+  background-size: 100px, cover;
+  background-repeat: repeat-x, no-repeat;
+  background-position: bottom left, center center;
+  background-attachment: scroll, fixed;
+}
+
+#grid {
+  padding: 10px;
+  background-color: brown;
+  overflow: hidden;
+}
+
+.hijo {
+  height: 300px;
+  width: 50%;
+  float: left;
+  text-align: justify;
+  padding: 20px;
+  /* margin: 10px; */
+}
+.hijo > div {
+  background-color: lightgreen;
+  height: 100%;
+}
+.hijo:nth-child(2) > div {
+  background-color: lightcoral;
+  height: 100%;
+}

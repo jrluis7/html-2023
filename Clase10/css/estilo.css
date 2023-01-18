@@ -1,0 +1,102 @@
+/* 
+    Clase 10 
+
+    - Repaso Color y  Prioridad de CSS
+
+    - Enlaces, anclas
+
+    - Backgrounds
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #333333;
+  padding: 8px;
+}
+
+.nav_item {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100px;
+  /* Inline que me permite cambiar de tamaño y poner padding por dentro */
+  display: inline-block;
+  padding: 2px;
+  text-align: center;
+}
+
+.nav_item:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.nav_item:visited {
+  color: darkgreen;
+}
+/* Cuando tenemos el enlace clickado (botón pulsado) */
+.nav_item:active {
+  color: yellow;
+}
+
+header {
+  /* 100% el tamaño del navgador */
+  min-height: 100vh;
+  background-color: lightblue;
+  /* border: 20px dotted black; */
+  padding: 40px;
+  /* background-clip: content-box; */
+  background-image: url("../img/mountains-g93136b3ca_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: 100%; */
+  background-size: cover;
+}
+
+h1 {
+  color: #207700;
+  margin-top: 0;
+}
+
+#primero {
+  min-height: 100vh;
+  background-color: lightpink;
+  padding: 20px;
+}
+
+#primero h3 {
+  margin: 0;
+}
+
+#segundo {
+  min-height: 100vh;
+  background-color: lightsalmon;
+  background-image: url("../img/mountains-g93136b3ca_1280.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 40%;
+}
+
+h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#tercero {
+  min-height: 100vh;
+  background-color: rgb(255, 122, 155);
+}

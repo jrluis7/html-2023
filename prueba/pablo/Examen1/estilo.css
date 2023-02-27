@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 800vh;
+  font-family: 'EB Garamond';
+  font: 400;
+  font-size: 22px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.italy {
+  font-size: 40px;
+  padding: 50px 0 0;
+  letter-spacing: 4px;
+}
+.box {
+  padding: 30px;
+}
+.imagen {
+  background-image: url(burger.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 97.8vh;
+  z-index: 1;
+  color: white;
+}
+
+.imageinfo-box {
+  padding-top: 10%;
+  width: 65%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.mrgn {
+  margin-top: 5px;
+}
+.imageinfo {
+  font-size: 26px;
+  color: white;
+}
+
+.back-image {
+  margin-top: 100px;
+}
+
+.bro {
+  border-bottom: 1px solid white;
+  margin-top: 50px;
+  z-index: 2;
+  width: 5%;
+}
+
+.menu-button {
+  margin-top: 20px;
+  background-color: transparent;
+  height: 58px;
+  width: 17%;
+
+  border: 1px solid white;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  transform-origin: 0%;
+  transition: all ease 0.25s;
+}
+
+.menu-button:hover {
+  width: 20%;
+  transform-origin: 100%;
+}
+
+.icon-down {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 2;
+}
+.welcome-box {
+  width: 65%;
+  margin: auto;
+  min-height: 50vh;
+  padding: 115px 0;
+  font-size: 40px;
+  color: #47475b;
+  text-align: center;
+}
+.para {
+  font-size: 30px;
+  color: #90909b;
+  line-height: 1.4;
+  width: 60%;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.welcome {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.bro2 {
+  border-bottom: 1px solid black;
+  width: 3%;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.images-box {
+  min-height: 25vh;
+  width: 65%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pad {
+  padding: 10px;
+}
+
+.image3 {
+  position: relative;
+  right: 10px;
+}
+
+.info {
+  width: 65%;
+  margin: auto;
+  min-height: 50vh;
+  padding: 115px 0;
+  font-size: 40px;
+  color: #47475b;
+}
+
+.bro3 {
+  border-bottom: 1px solid #47475b;
+  width: 60px;
+}
+
+.passion {
+  width: 50%;
+
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.history {
+  width: 50%;
+
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.para2 {
+  font-size: 30px;
+  color: #90909b;
+  line-height: 1.4;
+}
+
+.prices-box {
+  width: 65%;
+  margin: auto;
+  min-height: 70vh;
+  padding: 60px 0;
+}
+
+.paad {
+  margin-right: 4%;
+}
+
+.imagen1 {
+  background-image: url(dish-1-570x690.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 60vh;
+}
+
+.imagen2 {
+  background-image: url(dish-2-570x690.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 60vh;
+}
+
+.border {
+  border-bottom: 1px solid white;
+  margin: auto;
+  width: 12%;
+  padding-top: 150px;
+}
+
+.positioning {
+  color: white;
+  text-align: center;
+}
+
+.price {
+  font-size: 80px;
+  padding-top: 50px;
+}
+
+.price-info {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.prices-desc {
+  font-size: 30px;
+  margin: 30px 30px;
+}
+
+.auto {
+  margin: auto;
+}
+.welcome-box2 {
+  width: 65%;
+  margin: auto;
+  min-height: 50vh;
+  padding: 115px 0;
+  font-size: 40px;
+  color: #47475b;
+}
+
+.foods {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 1.4;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.mrgn2 {
+  margin-top: 40px;
+}
+
+.menufoods1 {
+  width: 50%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.menufoods2 {
+  width: 50%;
+  padding: 50px;
+}
+
+.food {
+  font-size: 30px;
+  align-items: flex-start;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.ingredients {
+  font-style: italic;
+  font-size: 24px;
+  color: #90909b;
+}
+
+span {
+  margin-left: 180px;
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.contenedor-uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contenedor-uno__elemento {
+  background-color: lightgreen;
+  width: 80%;
+  /* display: none; */
+  /* opacity: 0.5; */
+  filter: opacity(0.5);
+}
+
+#dos {
+  background-color: lightcoral;
+}
+
+.grid-cards {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.grid-cards__card {
+  width: 200px;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #3c3c3c;
+  background-color: lightcyan;
+  /* box-shadow: pxH pxV pxBlur pxSpread  color; */
+  box-shadow: 6px 6px 20px 4px #00000070;
+}
+
+.grid-cards__image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.grid-cards__card--brightness {
+  filter: brightness(50%);
+  transition: filter 0.5s;
+}
+
+.grid-cards__card--brightness:hover {
+  filter: brightness(150%);
+}
+
+.grid-cards__card--blur {
+  filter: blur(2px);
+  transition: filter 0.7s;
+}
+
+.grid-cards__card--blur:hover {
+  filter: blur(0px);
+}
+.grid-cards__card--saturate {
+  filter: saturate(150%);
+}
+
+.grid-cards__card--hue-rotate {
+  filter: hue-rotate(150deg) saturate(150%) blur(1px);
+}
+
+#cuatro {
+  height: 400px;
+  /* background: linear-gradient(90deg, red, green, yellow, blue); */
+  /* background: linear-gradient(90deg, red 10%, green 20%, yellow 30%, blue); */
+  background-image: linear-gradient(
+      90deg,
+      red 10%,
+      rgba(255, 0, 0, 0.704) 20%,
+      rgba(255, 0, 0, 0.134) 50%
+    ),
+    url("../img/overcast-g5fa6ab98f_1920.jpg");
+
+  background-size: auto, cover;
+}
+
+#cinco {
+  height: 100vh;
+  background-color: lightcoral;
+}
+
+/* #cinco video { */
+.container-video__video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: blur(3px);
+  transition: filter 1s;
+}
+.container-video__video:hover {
+  filter: blur(0px);
+}

@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  /* font-family: sans-serif; */
+}
+
+h1,
+h2,
+h4 {
+  margin: 0;
+}
+
+header {
+  /* background-color:rgb(226, 226, 226); */
+  /* width: 100%; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.contenedor_header {
+  /* border: rgb(79, 16, 143) 5px solid; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  margin: 10px;
+  background-image: url("../img/gallery-item-2-570x330.webp");
+}
+
+.texto1_header {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+}
+
+.texto2_header {
+  position: absolute;
+  top: 27%;
+}
+
+.texto2_header a {
+  color: white;
+}
+
+.texto3_header {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+}
+
+.boton {
+  border: solid rgb(255, 255, 255);
+  padding: 15px 50px;
+  position: absolute;
+  top: 70%;
+}
+.boton a {
+  color: white;
+}
+
+.linea_header {
+  position: absolute;
+  width: 5%;
+  height: 1px;
+  background-color: white;
+}
+
+.logo_header {
+  position: absolute;
+  top: 37%;
+}
+
+.foto_header {
+  width: 100%;
+}
+
+.foto_fondo {
+  object-fit: cover;
+}
+
+.dos {
+  width: 100%;
+}
+.contenedor_dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.linea_dos {
+  width: 5%;
+  height: 1px;
+  background-color: black;
+  margin: 50px;
+}
+
+.texto_dos {
+  width: 70%;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: rgb(62, 61, 61);
+}
+
+.tres {
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.contenedor_tres {
+  /* border: 2px solid rgb(50, 12, 147); */
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.fotos_a {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  object-fit: 100%;
+}
+
+.foto_b {
+  width: 50%;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
+
+.cuatro {
+  width: 100%;
+  margin: auto;
+}
+
+.contenedor_cuatro {
+  width: 80%;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: rgb(62, 61, 61);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.texto_a {
+  width: 50%;
+  /* border: solid red 2px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.texto_b {
+  width: 50%;
+  /* border: solid red 2px; */
+  display: flex;
+  flex-direction: column;
+}

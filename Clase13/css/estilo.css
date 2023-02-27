@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 500vh;
+  background-color: antiquewhite;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 20;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../img/mountains-g93136b3ca_1280.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding-top: 40vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* height: 100px; */
+  /* width: 100%; */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay h2 {
+  color: red;
+}
+
+#contacta {
+  position: fixed;
+  width: 50px;
+  right: 0px;
+  background-color: grey;
+  /* top: calc(50% - 100px); */
+  height: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* 
+    Centrar elementos Absolutos o Fijos
+        - Requerido: Tener un tamaño determinado ( width, height );
+        - Con Width determinado: Right 0, Left 0
+        - Con Height determinado: Top 0, bottom 0
+*/
+
+.container {
+  /* POosicionamiento estático o relativo -> y ancho definido -> Centrar con margin auto */
+  margin: auto;
+  max-width: 700px;
+}
+
+.sticky-element {
+  position: sticky;
+  top: 20px;
+  left: 0px;
+  width: 100%;
+  background-color: lightblue;
+}

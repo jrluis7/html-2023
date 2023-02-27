@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: beige;
+}
+
+.circulo {
+  height: 100px;
+  width: 100px;
+  background-color: #3c3c3c;
+  border-radius: 50%;
+  position: fixed;
+
+  /*  No retiene los eventos  */
+  /* pointer-events: none; */
+  cursor: none;
+
+  /* 
+  
+    Que cuando cambie una propiedad, haz el cambio suave
+  */
+  /* transition: all 1s; */
+}

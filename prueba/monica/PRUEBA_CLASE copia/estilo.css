@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+#contenedor_principal {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header {
+  margin: 40px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(./img/amborgesa.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  height: 100px;
+  margin: 100px;
+}
+
+.contenido_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: italic;
+  font-size: 26px;
+  margin-top: 200px;
+  text-align: center;
+  color: white;
+}
+
+.raya {
+  height: 2px;
+  background-color: white;
+  width: 80px;
+  margin: auto;
+  position: absolute;
+  left: 48.5%;
+}
+
+h3 {
+  font-size: 2em;
+  font-style: normal;
+}
+
+a {
+  color: white;
+}
+
+.boton {
+  display: inline;
+  width: 30%;
+  font-style: normal;
+  border: 1px solid white;
+  padding: 16px 50px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  cursor: pointer;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  right: 20px;
+}
+
+.izquierda {
+  position: absolute;
+  left: 80px;
+  bottom: 650px;
+}
+
+.derecha {
+  position: absolute;
+  right: 80px;
+  bottom: 650px;
+}
+
+.abajo {
+  position: absolute;
+  bottom: 400px;
+  left: 48.5%;
+}

@@ -1,0 +1,30 @@
+/* 
+
+    Prueba
+
+    Proyecto Final
+    
+    JavaScript / Jquery
+    
+
+        - HTML -> Lenguaje de maquetación
+        - CSS -> Lenguaje de estilo
+        - JS -> Lenguaje de programación -> Algoritmos
+
+
+
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.color-red {
+  color: red;
+}

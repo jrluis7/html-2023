@@ -13,6 +13,13 @@ body {
   font-family: sans-serif;
   min-height: 200vh;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
 
 /* COMUN */
 
@@ -141,10 +148,43 @@ main {
 #grid_houses {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 #grid_houses .item {
-  min-width: 200px;
-  height: 200px;
-  border: 1px so;
+  /* border: 1px solid; */
+  overflow: hidden;
+  width: 200px;
+}
+.item__image {
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+  /* height: 200px; */
+  aspect-ratio: 1/1;
+}
+
+#grid_houses .item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.item__row {
+  display: flex;
+  align-items: center;
+}
+.item__row__header {
+  flex-grow: 1;
+  font-weight: 400;
+}
+.rating {
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.font-light {
 }

@@ -1,0 +1,131 @@
+/* 
+    >>>> IMPORTANTE <<<<
+    1. Posicionamientos
+    2. Flex   -> Sustituto de FLOAT
+    3. Media Querys
+
+
+
+    REPASO Posicionamientos
+        - STATIC
+        - RELATIVE
+        - ABSOLUTE
+        - FIXED
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#padre {
+  background-color: lightblue;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.hijo {
+  /* height: 100px; */
+  width: 33.33%;
+  border: 1px solid black;
+  background-color: coral;
+  font-size: 1.2rem;
+  /* margin: 20px; */
+}
+
+.icon_notification {
+  font-size: 3rem;
+
+  /* 
+    Padre -> Relativo ( Distinto de STATIC )
+    Ref vertical y horizontal
+  */
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+#uno {
+  background-color: lightpink;
+  padding: 20px;
+  display: flex;
+  /* Cuando no quepan -> Los llevas a una segunda línea */
+  flex-wrap: wrap;
+
+  /* Dirección Principal ( por defecto es row ) 
+        -> Dirección secundaria va a ser la perpendicular ( por defecto column )
+  */
+  flex-direction: row;
+
+  /* Comportamiento en la dirección principal */
+  justify-content: center;
+
+  /* Comportamiento en la dirección secundaria */
+  align-items: center;
+}
+
+.uno__hijo {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+}
+
+#dos {
+  height: 500px;
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* Comp. en la dirección principal -> COLUMN */
+  justify-content: center;
+
+  /* Comp. en la dirección secundaria -> ROW */
+  align-items: center;
+}
+
+.dos__hijo {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(19, 161, 0);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 570px) {
+  /* @media (min-width: 400px) and (max-width: 570px) { */
+  #padre {
+    flex-wrap: wrap;
+  }
+
+  .hijo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  .hijo {
+    font-size: 1rem;
+  }
+}

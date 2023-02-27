@@ -1,0 +1,89 @@
+/* 
+    Metodología BEM
+
+*/
+
+:root {
+  --color--green: rgb(0, 121, 0);
+}
+
+/* RESET CSS */
+h1,
+h2 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.boton {
+  background-color: white;
+  color: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.boton:hover {
+  background-color: lightgray;
+}
+
+.boton--destacado {
+  color: white;
+  background-color: hsl(0, 0%, 24%);
+  border: 1px solid white;
+}
+
+.boton--destacado:hover {
+  background-color: #757575;
+}
+
+.boton--green {
+  border-color: var(--color--green);
+  color: var(--color--green);
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card--dark {
+  background-color: #6e6e6e;
+}
+
+.card__encabezado {
+  color: var(--color--green);
+  text-align: center;
+}
+
+.card__texto {
+}
+
+.card__image {
+  width: 100px;
+}
+
+.card__image--big {
+  width: 140px;
+}
+
+.redes-sociales {
+  background-color: white;
+  padding: 2px;
+  display: flex;
+  border-radius: 20px;
+}
+.redes-sociales__icon {
+  width: 25px;
+}

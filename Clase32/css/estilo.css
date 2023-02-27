@@ -1,0 +1,33 @@
+/* 
+
+    SVG
+
+    View Box
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 600vh;
+}
+
+svg {
+  border: 1px solid red;
+  height: 400px;
+}
+
+.rectangulo {
+  fill: purple;
+}
+
+.rectangulo:hover {
+  fill: pink;
+}
+
+#rectangulo1 {
+  fill: yellow;
+}

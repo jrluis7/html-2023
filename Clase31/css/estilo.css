@@ -1,0 +1,114 @@
+/* 
+    Prueba
+    
+    Corregir Elemento rotación 
+
+    Elementos SVG
+
+
+    
+
+
+    JS / jQUERY
+
+    PHP
+
+    Servidor
+
+    WordPress
+
+
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 300vh;
+}
+
+#container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+}
+
+.card:hover .container__card {
+  transform: rotateY(180deg);
+}
+
+.container__card {
+  border: 1px solid black;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-property: transform;
+  transition-duration: 1.5s;
+}
+.cara-a {
+  line-height: 0;
+  backface-visibility: hidden;
+}
+
+.cara-a__imagen {
+  width: 100%;
+}
+
+.cara-b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background-color: #ff000088;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.circle {
+  stroke: green;
+  stroke-width: 3;
+  fill: blue;
+  transition: fill 2s;
+  animation-name: escalar;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  transform-origin: 50px;
+}
+
+.circle:hover {
+  fill: white;
+}
+
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(0.5);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

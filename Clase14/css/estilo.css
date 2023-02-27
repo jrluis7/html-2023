@@ -1,0 +1,78 @@
+:root {
+  --main-color: #d58c05;
+  --secondary-color: #010319;
+  --grey-lighter: #c3c3c3;
+  --padding-standar: 7px;
+}
+
+/*  >>>>>>> ESTILO COMUN <<<<<<<<<< */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 500vh;
+}
+h1,
+h2 {
+  margin: 0;
+}
+
+/* >>>>>> PÁGINA INICIO <<<<<<<<< */
+header {
+  min-height: 100vh;
+  /* background-color: var(--grey-lighter); */
+  /* background: rgb(133,126,245); */
+  background: linear-gradient(
+    56deg,
+    rgba(133, 126, 245, 1) 18%,
+    rgba(121, 35, 9, 1) 42%,
+    rgba(81, 96, 79, 1) 68%,
+    rgba(150, 52, 74, 1) 81%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#uno {
+  padding: 20px;
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.columna {
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+}
+
+.ficha {
+  background-color: var(--grey-lighter);
+  padding: var(--padding-standar);
+}
+
+.destacado {
+  color: #d58c05;
+}
+
+/* >>>>>> PÁGINA CONTACTO <<<<<<< */
+
+/* >>>>>> MEDIA QUERYS <<<<<< */
+
+/*  Dispositivos entre 0 y 900 */
+@media (max-width: 900px) {
+  .columna {
+    width: 50%;
+  }
+}
+
+/*  Dispositivos entre 0 y 500 */
+
+@media (max-width: 500px) {
+  .columna {
+    width: 100%;
+  }
+}
+
+/*  MQ PÁGINA HOME */

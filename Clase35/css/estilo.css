@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 10px 10px;
+}
+
+.cuadrado {
+  height: 100px;
+  width: 100px;
+  background-color: coral;
+}
+
+.rotar {
+  animation-name: rotacion;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.tabs {
+  border: 1px solid black;
+  padding: 30px;
+  margin: auto;
+  max-width: 400px;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.activo {
+  display: block;
+}
+
+.tabs__item-a {
+  background-color: lightblue;
+}
+
+.tabs__item-b {
+  background-color: lightgreen;
+}
+.tabs__item-c {
+  background-color: rgb(238, 144, 230);
+}
+
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

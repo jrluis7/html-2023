@@ -1,0 +1,91 @@
+/* 
+
+    Repaso transformaciones
+
+    Repaso perspectiva
+
+    Repaso: enlazar 2 páginas
+
+
+*/
+
+/* >>>>>>>>>>> COMÚN <<<<<<<<<<<<<<<<< */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* >>>>>>>>>>> PAGINA HOME <<<<<<<<<<<<<<<< */
+#container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 700px;
+  perspective-origin: center left;
+  transition: all 7s;
+}
+
+.cuadrado {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 7s;
+}
+
+.rotate3D {
+  transform: rotateX(40deg);
+}
+
+.rotate3D:hover {
+  transform: rotateX(740deg);
+}
+
+#container:hover {
+  perspective-origin: center right;
+}
+
+.translateZ {
+  transform: translateZ(-300px);
+}
+
+.rotateY90 {
+  transform: rotateY(90deg);
+}
+#container2 {
+  height: 500px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lado {
+  transform-style: preserve-3d;
+  height: 100px;
+  width: 100px;
+}
+
+.green {
+  background-color: lightgreen;
+}
+.blue {
+  background-color: lightblue;
+  transform-origin: left center;
+  transform: rotateY(-90deg);
+}
+
+/* >>>>>>> PAGINA 2 <<<<<<< */

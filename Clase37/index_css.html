@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content_mario {
+        height: 500px;
+      }
+      .mario {
+        height: 1em;
+        width: 1em;
+        box-shadow: 10em 2em #000000, 11em 2em #000000, 12em 2em #000000,
+          13em 2em #000000, 7em 3em #000000, 8em 3em #000000, 9em 3em #000000,
+          10em 3em #f90e09, 11em 3em #f90e09, 12em 3em #ffffff, 13em 3em #f90e09,
+          14em 3em #000000, 6em 4em #000000, 7em 4em #f90e09, 8em 4em #f90e09,
+          9em 4em #f90e09, 10em 4em #f90e09, 11em 4em #ffffff, 12em 4em #f90e09,
+          13em 4em #ffffff, 14em 4em #000000, 5em 5em #000000, 6em 5em #f90e09,
+          7em 5em #f90e09, 8em 5em #f90e09, 9em 5em #f90e09, 10em 5em #f90e09,
+          11em 5em #000000, 12em 5em #000000, 13em 5em #000000, 14em 5em #000000,
+          15em 5em #000000, 16em 5em #000000, 17em 5em #000000, 5em 6em #000000,
+          6em 6em #f90e09, 7em 6em #f90e09, 8em 6em #f90e09, 9em 6em #f90e09,
+          10em 6em #000000, 11em 6em #000000, 12em 6em #000000, 13em 6em #000000,
+          14em 6em #000000, 15em 6em #000000, 16em 6em #000000, 17em 6em #000000,
+          4em 7em #000000, 5em 7em #f90e09, 6em 7em #f90e09, 7em 7em #000000,
+          8em 7em #000000, 9em 7em #000000, 10em 7em #ffcf8f, 11em 7em #ffcf8f,
+          12em 7em #ffcf8f, 13em 7em #ffcf8f, 14em 7em #ffcf8f, 15em 7em #ffcf8f,
+          16em 7em #000000, 4em 8em #000000, 5em 8em #000000, 6em 8em #000000,
+          7em 8em #000000, 8em 8em #ffcf8f, 9em 8em #ffcf8f, 10em 8em #ffcf8f,
+          11em 8em #ffcf8f, 12em 8em #000000, 13em 8em #ffcf8f, 14em 8em #000000,
+          15em 8em #ffcf8f, 16em 8em #000000, 4em 9em #000000, 5em 9em #ffcf8f,
+          6em 9em #000000, 7em 9em #000000, 8em 9em #ffcf8f, 9em 9em #ffcf8f,
+          10em 9em #ffcf8f, 11em 9em #ffcf8f, 12em 9em #000000, 13em 9em #ffcf8f,
+          14em 9em #000000, 15em 9em #000000, 16em 9em #000000, 3em 10em #000000,
+          4em 10em #ffcf8f, 5em 10em #ffcf8f, 6em 10em #000000, 7em 10em #000000,
+          8em 10em #000000, 9em 10em #ffcf8f, 10em 10em #ffcf8f,
+          11em 10em #ffcf8f, 12em 10em #ffcf8f, 13em 10em #ffcf8f,
+          14em 10em #ffcf8f, 15em 10em #ffcf8f, 16em 10em #ffcf8f,
+          17em 10em #000000, 3em 11em #000000, 4em 11em #ffcf8f,
+          5em 11em #ffcf8f, 6em 11em #ffcf8f, 7em 11em #000000, 8em 11em #ffcf8f,
+          9em 11em #ffcf8f, 10em 11em #000000, 11em 11em #ffcf8f,
+          12em 11em #ffcf8f, 13em 11em #ffcf8f, 14em 11em #ffcf8f,
+          15em 11em #ffcf8f, 16em 11em #ffcf8f, 17em 11em #000000,
+          4em 12em #000000, 5em 12em #ffcf8f, 6em 12em #ffcf8f, 7em 12em #ffcf8f,
+          8em 12em #ffcf8f, 9em 12em #000000, 10em 12em #000000,
+          11em 12em #000000, 12em 12em #000000, 13em 12em #000000,
+          14em 12em #ffcf8f, 15em 12em #ffcf8f, 16em 12em #000000,
+          17em 12em #000000, 5em 13em #000000, 6em 13em #000000,
+          7em 13em #ffcf8f, 8em 13em #ffcf8f, 9em 13em #ffcf8f,
+          10em 13em #ffcf8f, 11em 13em #000000, 12em 13em #000000,
+          13em 13em #000000, 14em 13em #000000, 15em 13em #000000,
+          16em 13em #000000, 6em 14em #000000, 7em 14em #000000,
+          8em 14em #000000, 9em 14em #ffcf8f, 10em 14em #ffcf8f,
+          11em 14em #ffcf8f, 12em 14em #ffcf8f, 13em 14em #ffcf8f,
+          14em 14em #ffcf8f, 15em 14em #000000, 5em 15em #000000,
+          6em 15em #f90e09, 7em 15em #f90e09, 8em 15em #f90e09, 9em 15em #000000,
+          10em 15em #000000, 11em 15em #000000, 12em 15em #000000,
+          13em 15em #000000, 14em 15em #000000, 15em 15em #000000,
+          17em 15em #000000, 18em 15em #000000, 4em 16em #000000,
+          5em 16em #f90e09, 6em 16em #f90e09, 7em 16em #f90e09, 8em 16em #f90e09,
+          9em 16em #f90e09, 10em 16em #000000, 11em 16em #000000,
+          12em 16em #f90e09, 13em 16em #f90e09, 14em 16em #f90e09,
+          15em 16em #000000, 16em 16em #000000, 19em 16em #000000,
+          3em 17em #000000, 4em 17em #f90e09, 5em 17em #f90e09, 6em 17em #f90e09,
+          7em 17em #000000, 8em 17em #000000, 9em 17em #000000,
+          10em 17em #1741fc, 11em 17em #000000, 12em 17em #f90e09,
+          13em 17em #f90e09, 14em 17em #f90e09, 15em 17em #f90e09,
+          16em 17em #000000, 17em 17em #000000, 19em 17em #000000,
+          3em 18em #000000, 4em 18em #f90e09, 5em 18em #f90e09, 6em 18em #000000,
+          10em 18em #000000, 11em 18em #1741fc, 12em 18em #000000,
+          13em 18em #f90e09, 14em 18em #f90e09, 15em 18em #f90e09,
+          16em 18em #f90e09, 17em 18em #000000, 19em 18em #000000,
+          3em 19em #000000, 4em 19em #f90e09, 5em 19em black, 11em 19em #000000,
+          12em 19em #1741fc, 13em 19em #000000, 14em 19em #000000,
+          15em 19em #000000, 16em 19em #000000, 17em 19em #000000,
+          18em 19em #000000, 4em 20em #000000, 5em 20em black, 11em 20em #000000,
+          12em 20em #ffe655, 13em 20em #1741fc, 14em 20em #1741fc,
+          15em 20em #1741fc, 16em 20em #ffe655, 17em 20em #000000,
+          5em 21em black, 6em 21em #000000, 10em 21em #000000, 11em 21em #1741fc,
+          12em 21em #1741fc, 13em 21em #1741fc, 14em 21em #1741fc,
+          15em 21em #1741fc, 16em 21em #1741fc, 17em 21em #000000,
+          5em 22em black, 6em 22em #1741fc, 7em 22em #000000, 8em 22em #000000,
+          9em 22em #000000, 10em 22em #1741fc, 11em 22em #1741fc,
+          12em 22em #1741fc, 13em 22em #1741fc, 14em 22em #1741fc,
+          15em 22em #1741fc, 16em 22em #1741fc, 17em 22em #000000,
+          18em 22em #000000, 5em 23em black, 6em 23em #1741fc, 7em 23em #1741fc,
+          8em 23em #1741fc, 9em 23em #1741fc, 10em 23em #1741fc,
+          11em 23em #1741fc, 12em 23em #1741fc, 13em 23em #1741fc,
+          14em 23em #1741fc, 15em 23em #1741fc, 16em 23em #000000,
+          17em 23em #8b4e21, 18em 23em #8b4e21, 19em 23em #000000,
+          5em 24em black, 6em 24em #1741fc, 7em 24em #1741fc, 8em 24em #1741fc,
+          9em 24em #1741fc, 10em 24em #1741fc, 11em 24em #1741fc,
+          12em 24em #1741fc, 13em 24em #1741fc, 14em 24em #1741fc,
+          15em 24em #000000, 16em 24em #8b4e21, 17em 24em #8b4e21,
+          18em 24em #8b4e21, 19em 24em #000000, 3em 25em black, 4em 25em black,
+          5em 25em #1741fc, 6em 25em #1741fc, 7em 25em #1741fc, 8em 25em #1741fc,
+          9em 25em #1741fc, 10em 25em #1741fc, 11em 25em #1741fc,
+          12em 25em #1741fc, 13em 25em #1741fc, 14em 25em #1741fc,
+          15em 25em #000000, 16em 25em #8b4e21, 17em 25em #8b4e21,
+          18em 25em #8b4e21, 19em 25em #000000, 2em 26em black, 3em 26em #8b4e21,
+          4em 26em black, 5em 26em black, 6em 26em #1741fc, 7em 26em #1741fc,
+          8em 26em #1741fc, 9em 26em #1741fc, 10em 26em #1741fc,
+          11em 26em #000000, 12em 26em #000000, 13em 26em #000000,
+          14em 26em #000000, 15em 26em #000000, 16em 26em #8b4e21,
+          17em 26em #8b4e21, 18em 26em #8b4e21, 19em 26em #000000,
+          2em 27em black, 3em 27em #8b4e21, 4em 27em #8b4e21, 5em 27em black,
+          6em 27em #1741fc, 7em 27em black, 8em 27em black, 9em 27em black,
+          10em 27em #000000, 15em 27em #000000, 16em 27em #8b4e21,
+          17em 27em #8b4e21, 18em 27em #000000, 19em 27em #000000,
+          2em 28em black, 3em 28em #8b4e21, 4em 28em #8b4e21, 5em 28em black,
+          6em 28em black, 16em 28em #000000, 17em 28em #000000,
+          18em 28em #000000, 2em 29em black, 3em 29em #8b4e21, 4em 29em #8b4e21,
+          5em 29em #8b4e21, 6em 29em black, 3em 30em black, 4em 30em black,
+          5em 30em black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content_mario">
+      <div class="mario"></div>
+    </div>
+  </body>
+</html>

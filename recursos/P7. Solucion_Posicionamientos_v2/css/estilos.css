@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --height-nav: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  min-height: 500vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--height-nav);
+  background-color: #3c3c3c;
+  z-index: 200;
+}
+#circulo-morado {
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+  background-color: purple;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#circulo-morado .capa1 {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(210, 1, 210);
+  height: 80px;
+
+  left: 0;
+  right: 0;
+  width: 80px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.navegador {
+  height: 100%;
+  /* border: 1px solid rgb(255, 0, 0); */
+  color: white;
+  overflow: hidden;
+}
+
+.logo {
+  padding-top: 30px;
+  float: left;
+  width: 60%;
+}
+
+.items {
+  float: right;
+  width: 40%;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.items_nav {
+  display: inline-block;
+  padding: 0px 10px;
+  float: left;
+}
+
+#primero {
+  margin-top: var(--height-nav);
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
+
+  padding: 100px 0px;
+}
+
+.col-33 {
+  width: 33.33%;
+  /* height: 100px; */
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  /* border: 1px solid black; */
+  width: 300px;
+  border-radius: 7px;
+  padding: 4px;
+  background-color: rgb(222, 222, 222);
+  box-shadow: 7px 12px 20px 2px #00000045;
+}
+
+.card img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#segundo {
+  padding: 100px 0px;
+  background-color: #f3f3f3;
+}
+
+.card-absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-absolute.space-40 {
+  top: 40px;
+  left: 40px;
+}
+.card-absolute.space-30 {
+  top: 30px;
+  left: 30px;
+}
+
+.relativo {
+  position: relative;
+}

@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#foto{
+    background-image: url(burger.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+    margin: 26px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    padding-bottom: 320px;
+}
+
+.info{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 28px;
+    display: block;
+    padding: 30px;
+}
+
+.phone-number{
+    display: inline-block;
+}
+
+.phone-number:hover{
+    display: inline;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.border{
+    border: 1px solid white;
+    width: 3%;
+}
+
+.logo{
+    margin-top: 84px;
+    margin-bottom: 52px
+}
+
+.size_1{
+    color: white;
+    font-style: normal;
+    font-size: 46px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 30px;
+}
+
+.menubtn{
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    padding: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.menubtn:hover{
+    border: 1px solid white;
+    padding: 16px;
+    padding-left: 88px;
+    padding-right: 88px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#welcome{
+    min-height: 50vh;
+    max-width: 40%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    color: #47475b;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+    padding: 24px;
+}
+
+.texto{
+    color: #90909b;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+}
+
+.welcomet{
+    text-align: center;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.borde-negro{
+    border: 1px solid #47475b;
+    width: 4%;
+}
+
+.fotos-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.fotos-izq{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+
+    gap: 30px;
+}
+
+.scale-foto:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.size_2{
+    height: 330px;
+    width: 570px;
+    overflow: hidden;
+}
+
+.size_3{
+    height: 690px;
+    width: 548px;
+    overflow: hidden;
+}
+
+#historia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 140px;
+
+    max-width: 60%;
+    margin: auto;
+
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+.history{
+    color: #47475b;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.borde-negro-2{
+    border: 1px solid #47475b;
+    width: 8%;
+}
+
+.precio-platos{
+    height: 690px;
+    width: 570px;
+    background-image: url(italiano.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.precio-platos-2{
+    height: 690px;
+    width: 570px;
+    background-image: url(arroz.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-platos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.price{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+.plato-nombre{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ingredientes{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

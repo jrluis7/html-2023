@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <a href=""> Home </a>
+        </span>
+        <span>
+          <a href=""> Link 1 </a>
+        </span>
+        <span>
+          <a href=""> Link 2 </a>
+        </span>
+      </nav>
+    </header>
+
+    <h1>Metodología BEM</h1>
+
+    <div id="grid">
+      <div class="card">
+        <div class="card__column">
+          <h1 class="card__encabezado">The Child</h1>
+          <p class="card__texto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus necessitatibus quas fuga accusamus nam, facilis
+            perspiciatis suscipit laborum neque vel?
+          </p>
+          <div class="card__redes-sociales redes-sociales">
+            <a class="redes-socilaes__link">
+              <img
+                class="redes-sociales__icon"
+                src="img/2021_Facebook_icon.svg.webp"
+                alt=""
+              />
+            </a>
+            <a class="redes-socilaes__link">
+              <img class="redes-sociales__icon" src="img/3689112.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="card__column">
+          <img
+            class="card__image card__image--big"
+            src="img/TheChild-Fathead.png"
+            alt=""
+          />
+          <button class="boton boton--green">Contacta</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="segundo">
+      <button class="boton">Botón 1</button>
+      <button class="boton boton--destacado">Botón destacado</button>
+    </div>
+  </body>
+</html>

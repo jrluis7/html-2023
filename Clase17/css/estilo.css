@@ -1,0 +1,87 @@
+/* 
+    Clase 17 - FLEX
+
+    Hover
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#uno {
+  background-color: lightblue;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* gap: 5px; */
+}
+
+.ficha {
+  height: 100px;
+  width: 120px;
+  background-color: lightcoral;
+  border: 2px solid white;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#dos {
+  height: 100vh;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+
+  flex-wrap: wrap;
+  /* align-content: center; */
+}
+
+#tres {
+  background-color: lightgoldenrodyellow;
+  min-height: 100vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.align-self {
+  align-self: stretch;
+  height: auto;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-5 {
+  order: 5;
+}

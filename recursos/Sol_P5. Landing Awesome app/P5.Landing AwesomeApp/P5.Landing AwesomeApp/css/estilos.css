@@ -1,0 +1,355 @@
+:root{
+    --width-img-user: 96px
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #66615b;
+}
+h1{
+    font-size: 3em;
+}
+h1, h2, h3{
+    font-family: 'Dosis', sans-serif;
+}
+h2{
+    font-size: 2.3em;
+}
+/* ESTILOS GENERALES */
+.wrapper{
+    padding: 0 10%;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+a.btn--round{
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+}
+a.btn--round:hover{
+    color: #333;
+    background-color: white;
+}
+a.btn--price{
+    border: 2px solid #66615b;
+    border-radius: 50px;
+    color: #66615b;
+}
+a.btn--price:hover{
+    color: white;
+    background-color: #66615b;
+}
+
+/* HEADER */
+#cabecera{
+    background-image: url('https://demo.templateflip.com/awesome-app/images/home-image.jpg');
+    background-size: cover;
+    color:white;
+}
+#cabecera nav{
+    overflow: hidden;
+    padding-top: 30px;
+}
+#cabecera nav #brand{
+    float: left;
+}
+#cabecera nav #brand img{
+    /* Para centrar elementos inline dentro de una línea (reglón) */
+    vertical-align: middle;
+}
+#cabecera nav #brand span{
+    display: inline-block;
+    padding: 14px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+}
+#cabecera nav #menu{
+    float: right;
+}
+#cabecera nav #menu ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+#cabecera nav #menu ul li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 12px;
+}
+ nav a{
+    color:#efefef;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+nav a:hover{
+    color:white
+}
+
+/* INFO HEADER */
+.info{
+    overflow: hidden;
+    padding: 130px 0;
+}
+.info .col-texto{
+    width: 60%;
+    float: left;
+    padding: 0 30px;
+}
+.info .col-texto ul {
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 25px;
+}
+.info .col-texto ul li{
+    line-height: 35px;
+}
+.info .col-texto ul li i{
+    margin-right: 15px;
+}
+
+.info .col-img{
+    width: 40%;
+    float: left;
+}
+.info .col-img img{
+    width: 100%;
+}
+
+/* SERVICIOS */
+#servicios{
+    overflow: hidden;
+    padding-top: 100px;
+}
+#servicios .col_servicio{
+    float: left;
+    width: 33.33%;
+    overflow: hidden;
+    padding: 20px;
+    height: 200px;
+}
+#servicios .col_servicio i, #servicios .col_servicio .col_servicio_text{
+    float: left;
+}
+#servicios .col_servicio i{
+    width: 20%;
+    font-size: 40px;
+    color:#f5593d;
+    margin-top: 25px;
+}
+#servicios .col_servicio .col_servicio_text{
+    width: 80%;
+}
+#servicios .col_servicio .col_servicio_text p{
+    color:#6c757d;
+}
+#servicios hr{
+    border: none;
+    border: 1px solid #f1eae0;
+}
+
+
+/* SLIDER PRODUCTOS */
+#slider_productos{
+    text-align: center;
+    background-color: #f5fafd;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#slider_productos>p, #pricing>p, #customers>p{
+    line-height: 25px;
+    margin-bottom: 70px;
+    color: #66615b;
+}
+#slider_productos img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* PRICING */
+#pricing, #customers{
+    text-align: center;
+    color: #66615b;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+#pricing h2, #customers h2{
+    font-size: 2.6em;
+    color: #333;
+    margin-top: 40px;
+}
+#pricing .wrapper-table{
+    width: 25%;
+    padding: 10px;
+    float: left;
+}
+#pricing .table-price{
+    background-color: #f5fafd;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+}
+#pricing .table-price .price{
+    font-size: 38px;
+    font-family: 'Dosis', helvetica, Arial, sans-serif;
+    height: 107px;
+    line-height: 107px;
+    vertical-align: middle;
+    background-color: white;
+    color: #333;
+}
+#pricing .table-price ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 3;
+    padding: 20px;
+}
+#pricing .table-price ul li{
+    border-bottom: 1px dashed #eee;
+}
+
+#pricing .table-price .startfree p{
+    font-size: 0.9em;
+    color: #6c757d;
+}
+#pricing hr{
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: left;
+    width: 100%;
+}
+#pricing .table-price.table-price--marked .price{
+    background-color: none;
+    background: linear-gradient(270deg,#f7395f 0%,#fe702e 100%);
+    color: white;
+}
+#pricing .table-price.table-price--marked .startfree .btn.btn--price{
+    background-color: none;
+    background: linear-gradient(270deg,#f7395f 0%,#fe702e 100%);
+    color: white;
+    border-color: transparent;
+}
+
+/* CUSTOMERS */
+#customers .customer_container_card{
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+#customers .customer_container_card .card{
+    box-shadow: rgb(0 0 0 / 15%) 0 6px 10px -4px;
+    border-radius: 12px;    
+    background-color: #f5fafd;
+    padding: 32px;
+}
+#customers .customer_container_card .card .card_row_data{
+    overflow: hidden;
+    
+}
+#customers .customer_container_card .card img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+#customers .customer_container_card .card img, #customers .customer_container_card .card .card_row_data_info{
+    float: left;   
+}  
+#customers .customer_container_card .card .card_row_data_info{
+    float: left;
+    padding-left: 20px;
+    width: calc(100% - var(--width-img-user));
+    text-align: left;
+}   
+#customers .customer_container_card .card .card_row_data_info h3{
+    color: black;
+    font-family: 'Dosis';    
+}
+
+#customers .customer_container_card .card p{
+    font-size: 15px;
+    text-align: left;
+}
+
+#download{
+    background: linear-gradient( 270deg,#f7395f 0%,#fe702e 100%);
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#download h2{
+    color: white;
+    text-align: center;
+}
+#download .download_container_card{
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+}
+#download .download_container_card .download_card{
+    box-shadow: rgb(0 0 0 / 15%) 0 6px 10px -4px;
+    border-radius: 12px;    
+    background-color: #f5fafd;
+    padding: 15px 20px;
+    overflow: hidden;
+    height: 105px;
+}
+#download .download_container_card .download_card .download_card_icon{
+    width: 60px;
+    float: left;
+    color: #888888;
+    line-height: 60px;
+
+}
+#download .download_container_card .download_card .download_card_icon i{
+    font-size: 55px;
+}
+#download .download_container_card .download_card .download_card_info{
+    width: calc(100% - 60px);
+    float: left;
+    padding-left: 10px;
+}
+#download .download_container_card .download_card .download_card_info h3{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+#download .download_container_card .download_card .download_card_info p{
+    margin:0;
+}
+
+
+/* FOOTER */
+#final_footer{
+    background-color: #252422;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+#final_footer p a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 12px;
+}
+#final_footer #rrss{
+    padding-bottom: 35px;
+}
+
+
+
+
+

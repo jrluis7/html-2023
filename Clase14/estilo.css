@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 300vh;
+}
+h1,
+h2 {
+  margin: 0;
+}
+#uno {
+  background-color: coral;
+  height: 400px;
+  padding: 20px;
+}
+
+#dos {
+  background-color: rgb(80, 255, 118);
+  height: 200px;
+  position: relative;
+}
+
+#tres {
+  background-color: rgb(80, 194, 255);
+  height: 100px;
+}
+
+.uno__columna {
+  background-color: white;
+  height: 20px;
+  margin: 2px;
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  /* Mi primer padre con posicionamiento distinto de STATIC */
+  position: absolute;
+}
+
+#c-1 {
+  top: 0px;
+  right: 0px;
+}
+#c-2 {
+  top: 20px;
+  right: 20px;
+}
+#c-3 {
+  top: 40px;
+  right: 40px;
+}
+
+#tres {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

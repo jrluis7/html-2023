@@ -1,0 +1,13 @@
+/* @font-face {
+  font-family: "Circular";
+  src: url("./fonts/circular-std-medium-500.ttf");
+  font-display: ;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Circular";
+}

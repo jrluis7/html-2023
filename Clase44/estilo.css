@@ -1,0 +1,83 @@
+/* 
+
+    Clase 44 -> SASS y SCSS
+
+
+    Vamos a colocar todo el SCSS
+*/
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.center, #uno p, #uno .purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#uno {
+  min-height: 100px;
+  background-color: lightblue;
+}
+#uno p, #uno .purple {
+  color: purple;
+}
+#uno button {
+  background-color: lightcoral;
+  color: white;
+}
+#uno button:hover {
+  background-color: pink;
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  transform-origin: center center;
+  transform: rotate(100deg);
+}
+
+p {
+  color: green;
+}
+
+.pd-1 {
+  padding: 2px;
+}
+
+.pd-2 {
+  padding: 4px;
+}
+
+.pd-3 {
+  padding: 6px;
+}
+
+.pd-4 {
+  padding: 8px;
+}
+
+.pd-5 {
+  padding: 10px;
+}
+
+.pd-6 {
+  padding: 12px;
+}
+
+.pd-7 {
+  padding: 14px;
+}
+
+.pd-8 {
+  padding: 16px;
+}
+
+.pd-9 {
+  padding: 18px;
+}/*# sourceMappingURL=estilo.css.map */

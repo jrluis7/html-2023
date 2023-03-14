@@ -1,0 +1,85 @@
+/* 
+
+    Clase 44 -> SASS y SCSS
+        
+
+    Vamos a colocar todo el SCSS
+*/
+@import 'variables.scss';
+
+*{
+    box-sizing: border-box;
+
+}
+
+h1,h2{
+    margin: 0;
+}
+
+.center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transformacion{
+    transform:rotate(45deg)
+}
+
+@mixin rotar( $grados ){
+    transform-origin: center center;
+    transform: rotate( $grados );
+}
+ 
+#uno{
+    min-height: 100px;
+    background-color: $primary-color;
+    
+    p, .purple{
+        color:purple;
+        @extend .center;
+    }
+
+    button{
+        background-color: lightcoral;
+        color:white;
+
+        &:hover{
+            // #uno button:hover
+            background-color: pink;
+        }
+
+    }
+    // Lo podemos escribir DENTRO de button con el operador &. & -> al mismo elemento
+    // button:hover{
+    //     background-color: pink;
+    // }
+
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    // @include transformacion()   
+    @include rotar( 100deg )
+}
+
+p{
+    color:$color-green;
+}
+
+
+@for $i from 1 to 10{
+    .pd-#{$i}{
+        padding: #{$i*2}px;
+    }
+    
+}
+
+
+
+
+
+
